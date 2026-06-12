@@ -2,6 +2,18 @@
 
 Flutter POC for a multi-service on-demand marketplace built around Stripe Connect (Express accounts), platform fees, split payouts, and a real-time price negotiation engine.
 
+## Demo
+
+These are real iOS-Simulator captures of the running app, generated via an integration-test driver. See [FLOW.md](FLOW.md) for how they are produced.
+
+| Marketplace | Provider detail | Negotiation |
+| --- | --- | --- |
+| ![Marketplace](screenshots/01-marketplace.png) | ![Provider detail](screenshots/02-provider-detail.png) | ![Negotiation](screenshots/03-negotiation.png) |
+| Counter offer | Payout dashboard | |
+| ![Counter offer](screenshots/04-counter-offer.png) | ![Payout dashboard](screenshots/05-payout-dashboard.png) | |
+
+![Demo](screenshots/demo.gif)
+
 ## What it shows
 
 - Provider listing with Stripe Connect onboarding status (`created`, `pending`, `verified`, `rejected`) derived from the `account.updated` webhook signals.
